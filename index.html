@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+       <title>FanOFan</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+       
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 100) {
+      $(".black").css("background-color" , "white");
+      $(".black ul li a").css("font-size" , "13px");
+      $(".black ul li a").css("font-weight" , "300");
+	  $(".black ul li a").css("color" , "black");
+       $("li a.active").css("background-color" , "black").css("color" , "#91fa70");
+    }
+
+    else{
+      $(".black").css("background-color" , "transparent");
+      $(".black ul li a").css("font-size" , "18px");
+      $(".black ul li a").css("font-weight" , "400");
+      $(".black ul li a").css("color" , "#91fa70");
+	   $("li a.active").css("background-color" , "grey").css("color" , "#91fa70");
+	}
+  });
+});
+</script>
+
+    <style>
+
+.black{
+  position:fixed;
+  background:transparent;
+  width: 100%;
+ 
+}
+.black ul{
+  list-style-type:none;
+}
+
+.black ul li{
+  display:inline-block;
+}
+
+.black ul li a{
+  display:inline-block;
+ 
+    font-size: 18px;
+    font-weight: 400;
+    text-shadow: none;
+    padding: 20px;
+    letter-spacing: 0.5px;
+}
+
+</style>
+
+</head>
+<body onload="myFunction()">
+<!------Pre-Loader------>
+  <div id="loading">
+    <div class="fan">
+  <div class="ceiling-container">
+  <div class="ceiling-fan horizontal left"></div>
+  <div class="ceiling-fan horizontal right"></div>  
+  <div class="ceiling-fan vertical rotated top"></div>
+  <div class="ceiling-fan vertical rotated bottom"></div>
+ </div>
+ </div>
+ </div>
+<!-----End Pre-Loader------>
+<!----NAv Bar section---->
+<!-- Navigation -->
+<div class="header" style="padding-right: 10px;">
+        
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                </div>
+                <!--/.navbar-header-->
+                <div class="black collapse navbar-collapse" id="main-nav">
+                    
+                        <div class="navbar-brand"><img src="logo.png" alt="logo" class="img-responsive" width="250px">
+                            
+                        </div>
+                    <ul class="nav navbar-right">
+                        <li><a href="index.html" id="li" class="active">HOME</a></li>
+                        <li><a href="about.html" id="li">ABOUT US</a></li>
+                        <li><a href="product.html" id="li">PRODUCTS</a></li>
+                        <li><a href="gallery.html" id="li">GARLLERY</a></li>
+                        <li><a href="contact us.html" id="li">CONTACT US</a></li>
+                    </ul>
+                    
+                
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.header-->
+
+
+    <section class="cd-hero">
+        <ul class="cd-hero-slider autoplay">  
+        <!-- 
+            <ul class="cd-hero-slider autoplay"> for slider auto play 
+            <ul class="cd-hero-slider"> for disabled auto play
+        -->
+            <li class="selected first-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>Introduction to</span>
+                        <h2>Creative Fans World</h2>
+                        <p></p>
+                        <div class="primary-button">
+                            <a href="index.html" class="scroll-link" data-id="about">Discover More</a>
+                        </div>                           
+                    </div>                   
+                </div> <!-- .cd-full-width -->
+            </li>
+
+            <li class="second-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>We Are Perfect Manufactures</span>
+                        <h2>Our Team Members</h2>
+                        <p></p>
+                        <div class="primary-button">
+                            <a href="about.html">Read More</a>
+                        </div>                        
+                    </div>                     
+                </div> <!-- .cd-full-width -->
+            </li>
+
+            <li class="third-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>Design is a hobby</span>
+                        <h2>Attractive fans</h2>
+                        <p></p>
+                        <div class="primary-button">
+                            <a href="gallery.html">View Details</a>
+                        </div>                           
+                    </div>                         
+                </div> <!-- .cd-full-width -->
+            </li>
+        </ul> <!-- .cd-hero-slider -->
+
+        <div class="cd-slider-nav">
+            <nav>
+                <span class="cd-marker item-1"></span>
+                
+                <ul>
+                    <li class="selected"><a href="#0"></a></li>
+                    <li><a href="#0"></a></li>
+                    <li><a href="#0"></a></li>                        
+                </ul>
+            </nav> 
+        </div> <!-- .cd-slider-nav -->
+    </section> <!-- .cd-hero -->
+
+  </div>
+  <script type="text/javascript" src="engine1/script.js"></script>
+    <div id="about" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h4>What We Do</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+        </div>
+            <div class="row">
+                <div data-aos="fade-right">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item first-service">
+                        <div class="icon"></div>
+                        <h4>Easy Installments</h4>
+                        <p>FANoFAN give there customers a tension free istallment plan.</p>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up">
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item second-service">
+                        <div class="icon"></div>
+                        <h4>Creative Ideas</h4>
+                        <p>We have our experties in producing creative design of fans.</p>
+                    </div>
+                </div>
+            </div>
+                <div data-aos="fade-down">
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item third-service">
+                        <div class="icon"></div>
+                        <h4>Good Rates</h4>
+                        <p>We try our level best to give our customers a comfort in form of good rates.</p>
+                    </div>
+                </div>
+            </div>
+                <div data-aos="fade-left">
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item fourth-service">
+                        <div class="icon"></div>
+                        <h4>Open 24/7</h4>
+                        <p>FANoFAN customer care is always avaliable for our precise customers.</p>
+                    </div>
+                </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="what-we-do">
+        <div class="container">
+            <div class="row">
+
+
+
+
+
+                <div class="col-md-6">
+                    <div class="left-text">
+                        <h4>New offers just arrived,<br>Buy a fan and get a free easyload.</h4>
+                        <div data-aos="flip-up" data-aos-duration="500">
+                        <p>FANoFAN is a fan manufacturing and selling company.We try to keep our customers satisfied with us.And we are able to this till now in this manner that we provide them good rates for a unique fans.
+                        <br><br>
+                        We try our level best to keep our customers happy.
+                        </p>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <div class="white-button">
+                                    <a href="#">Discover More</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="primary-button">
+                                    <a href="#">Purchase Now</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div data-aos="zoom-out" data-aos-duration="900">
+                <div class="col-md-6">
+                    <div class="right-image">
+                        <img src="img/what-we-do-right-image.png" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio" class="page-section">
+        <div class="content-wrapper">
+            <div class="inner-container container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <h4>Our Products</h4>
+                            <div class="line-dec"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projects-holder-3">
+                    <div class="filter-categories">
+                        <ul class="project-filter">
+                            <li class="filter" data-filter="all"><span>All</span></li>
+                            <li class="filter" data-filter="celling"><span>Celling</span></li>
+                            <li class="filter" data-filter="padstran"><span>Padstran</span></li>
+                            <li class="filter" data-filter="t"><span>Table</span></li>
+                            <li class="filter" data-filter="wall"><span>Wall</span></li>
+                            <li class="filter" data-filter="exaust"><span>Exaust</span></li>
+                        </ul>
+                    </div>
+                    <div class="projects-holder">
+                        <div class="row">
+                            <div class="col-md-3  mix t">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <a href="#"><img src="img/portfolio_02.png"> </a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3  mix wall">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <a href="#"><img src="img/portfolio_01.png"> </a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3  mix padstran">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <a href="#"><img src="img/portfolio_04.png"> </a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3  mix celling">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <a href="#"><img src="img/portfolio_08.png"> </a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3  mix t">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <a href="#"><img src="img/portfolio_03.png"> </a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3  mix celling">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <a href="#"><img src="img/portfolio_07.png"> </a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3  mix exaust">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <a href="#"><img src="img/portfolio_05.png"> </a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3  mix celling">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <a href="#"><img src="img/portfolio_06.png"> </a>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+
+    <div class="row" style="background-image:url(img/blog-bg.png);">
+        <div class="col-md-12">
+            
+                <marquee behavior="scroll" direction="left">
+                <img src="images/1.jpg" width="240" height="160" alt="..SALE"/>
+                <img src="images/2.jpg" width="240" height="160" alt="..SALE"/>
+                <img src="images/3.jpg" width="240" height="160" alt="..SALE"/>
+                <img src="images/4.jpg" width="240" height="160" alt="..SALE"/>
+                <img src="images/9.jpg" width="240" height="160" alt="..SALE"/>
+                </marquee>
+            
+        </div>
+    </div>
+
+    <div id="fun-facts">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-3">
+                    <div data-aos="fade-right" data-aos-duration="900">
+                    <div class="fact-item">
+                        <div class="counter">962</div><p>per month</p>
+                        <span>Regular Visitors</span>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="col-md-3">
+                    <div data-aos="fade-up" data-aos-duration="900">
+                    <div class="fact-item">
+                        <div class="counter">214</div><p>per month</p>
+                        <span>Fan Sold</span>
+                    </div>
+                </div>
+            </div>
+                
+                <div class="col-md-3">
+                    <div data-aos="fade-down" data-aos-duration="900">
+                    <div class="fact-item">
+                        <div class="counter">118</div><p>per month</p>
+                        <span>Fan Manufactured</span>
+                    </div>
+                </div>
+            </div>
+                
+                <div class="col-md-3">
+                    <div data-aos="fade-left" data-aos-duration="900">
+                    <div class="fact-item">
+                        <div class="counter">16</div><p>per month</p>
+                        <span>Patners</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>FanOFan Company</h3>
+                    <p style="color: white;">FanOFan Company is into manufacturing and selling on Fans.They manufacture fans for various needs of customers. From Ceiling Fans to Table Fans to Exhaust Fans, they are into all types of Fan Manufacturing. 
+They are looking to come up with their own website and display all the products available with them. They want to provide a detailed information about all their products.</p>
+                    <div class="footer-copyright">
+                         <p style="color: white;">Copyright &copy; 2019 FANoFAN - Manufacture Fans</p>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Talk to us</h3>
+                    <p style="color: white;"><i class="fa fa-globe"></i > 2nd Floor,Prograssive Center,Sharah-e-Faisal,Karachi.</p>
+                    <p style="color: white;"><i class="fa fa-phone"></i> 021-34569871.</p>
+                    <p style="color: white;"><i class="fa fa-save"></i>fanofan@company.com.</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>                                    
+          </div>
+     </div>
+</footer>
+    
+    <script type="text/javascript">
+  var preloader = document.getElementById('loading');
+  function myFunction(){
+    preloader.style.display = 'none';
+  }
+  </script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    </script>
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>FanOFan</title>
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/fontAwesome.css">
+<link rel="stylesheet" href="css/hero-slider.css">
+<link rel="stylesheet" href="css/tooplate-style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 100) {
+      $(".black").css("background-color" , "white");
+      $(".black ul li a").css("font-size" , "13px");
+      $(".black ul li a").css("font-weight" , "300");
+	  $(".black ul li a").css("color" , "black");
+       $("li a.active").css("background-color" , "black").css("color" , "#91fa70");
+    }
+
+    else{
+      $(".black").css("background-color" , "transparent");
+      $(".black ul li a").css("font-size" , "18px");
+      $(".black ul li a").css("font-weight" , "400");
+      $(".black ul li a").css("color" , "#91fa70");
+	   $("li a.active").css("background-color" , "grey").css("color" , "#91fa70");
+	}
+  });
+});
+</script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+ <style>
+  .con {
+  position: relative;
+  text-align: center;
+  color: black;
+}
+
+
+  .top-left {
+  position: absolute;
+  top: 20%;
+  left: 6px;
+}
+
+
+.top-right {
+  position: absolute;
+  top: 15%;
+  right: 6px;
+}
+
+.black{
+  position:fixed;
+  background:transparent;
+  width: 100%;
+ 
+}
+.black ul{
+  list-style-type:none;
+}
+
+.black ul li{
+  display:inline-block;
+}
+
+.black ul li a{
+  display:inline-block;
+  
+	font-size: 18px;
+	font-weight: 400;
+	text-shadow: none;
+	padding: 20px;
+	letter-spacing: 0.5px;
+}
+
+.btn{
+
+	display: inline-block;
+	background-color: #a2cf8d;
+	padding: 12px 18px;
+	letter-spacing: 1px;
+	border-radius: 20px;
+	transition: all 0.5s;
+
+}
+
+.btn a{
+
+	color: black;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background-color: #5c9d7d;
+}
+</style>
+
+</head>
+<body onload="myFunction()">
+<!------Pre-Loader------>
+  <div id="loading">
+    <div class="fan">
+  <div class="ceiling-container">
+  <div class="ceiling-fan horizontal left"></div>
+  <div class="ceiling-fan horizontal right"></div>  
+  <div class="ceiling-fan vertical rotated top"></div>
+  <div class="ceiling-fan vertical rotated bottom"></div>
+ </div>
+ </div>
+ </div>
+<!-----End Pre-Loader------>
+<!----NAv Bar section---->
+<!-- Navigation -->
+<div class="header" style="padding-right: 10px;">
+        
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    
+                </div>
+                <!--/.navbar-header-->
+                <div class="black collapse navbar-collapse" id="main-nav">
+                	
+                        <div class="navbar-brand"><img src="logo.png" alt="logo" class="img-responsive" width="250px">
+                        	
+                        </div>
+                    <ul class="nav navbar-right">
+                        <li><a href="index.html" id="li">HOME</a></li>
+                        <li><a href="about.html" id="li">ABOUT US</a></li>
+                        <li><a href="product.html" id="li" class="active">PRODUCTS</a></li>
+                        <li><a href="gallery.html" id="li">GARLLERY</a></li>
+                        <li><a href="contact us.html" id="li">CONTACT US</a></li>
+                    </ul>
+ 					
+				
+        </div>
+        <!--/.container-->
+    </div>
+    <!--/.header-->
+
+
+     <section class="cd-hero">
+        <ul class="cd-hero-slider autoplay">  
+        <!-- 
+            <ul class="cd-hero-slider autoplay"> for slider auto play 
+            <ul class="cd-hero-slider"> for disabled auto play
+        -->
+            <li class="selected first-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>Introduction to</span>
+                        <h2>Creative Fans World</h2>
+                        <p></p>
+                        <div class="primary-button">
+                            <a href="index.html" class="scroll-link" data-id="about">Discover More</a>
+                        </div>                           
+                    </div>                   
+                </div> <!-- .cd-full-width -->
+            </li>
+
+            <li class="second-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>We Are Perfect Manufactures</span>
+                        <h2>Our Team Members</h2>
+                        <p></p>
+                        <div class="primary-button">
+                            <a href="about.html">Read More</a>
+                        </div>                        
+                    </div>                     
+                </div> <!-- .cd-full-width -->
+            </li>
+
+            <li class="third-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>Design is a hobby</span>
+                        <h2>Attractive fans</h2>
+                        <p></p>
+                        <div class="primary-button">
+                            <a href="gallery.html">View Details</a>
+                        </div>                           
+                    </div>                         
+                </div> <!-- .cd-full-width -->
+            </li>
+        </ul> <!-- .cd-hero-slider -->
+
+        <div class="cd-slider-nav">
+            <nav>
+                <span class="cd-marker item-1"></span>
+                
+                <ul>
+                    <li class="selected"><a href="#0"></a></li>
+                    <li><a href="#0"></a></li>
+                    <li><a href="#0"></a></li>                        
+                </ul>
+            </nav> 
+        </div> <!-- .cd-slider-nav -->
+    </section> <!-- .cd-hero -->
+
+
+  </div>
+  <script type="text/javascript" src="engine1/script.js"></script>
+
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="col-sm-3" style="padding-top: 50px;" align="center">
+        <img src="celling fan/ceiling-fan--vector.png" alt="" height="77px">
+        <a href="celling fan.html"><span style="color:   #5c9d7d; font-size: 22px;">CEILING</span></a>
+        <span>FAN</span>
+        <hr>
+      </div>
+
+      <div class="col-sm-3" style="padding-top: 50px;" align="center">
+        <img src="pedistran fan/padstal-fan-vector.png" alt="" height="77px">
+        <a href="padastal fan.html"><span style="color:   #5c9d7d; font-size: 22px;">PADSTAL</span></a>
+        <span>FAN</span>
+        <hr>
+      </div>
+
+      <div class="col-sm-3" style="padding-top:50px;" align="center">
+        <img src="table fan/table-fan-vector.png" alt="" height="77px">
+        <a href="table fan.html"><span style="color:   #5c9d7d; font-size: 22px;">TABLE</span></a>
+        <span>FAN</span>
+        <hr>
+      </div>
+
+      <div class="col-sm-3" style="padding-top: 50px;" align="center">
+        <img src="bracket fan/wall-fan-vector.png" alt="" height="84px">
+        <a href="wall fan.html"><span style="color:   #5c9d7d; font-size: 22px;">WALL</span></a>
+        <span>FAN</span>
+        <hr>
+      </div>
+
+    </div>
+  </div>
+
+
+<div data-aos="fade-right">
+  <div class="con">
+    <img src="celling fan/bg.png" alt="" width="100%" height="300px">
+    <div class="top-left"><h2>CEILING FANS</h2>
+    <div data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="900"
+     data-aos-duration="900">
+    <p>A perfect mix of aesthetics and functionality Usha Ceiling fans
+    <br> come in various stylish designs, vibrant colours and innovative technology, 
+    <br>to perfectly complement both your lifestyle and interior décor.</p>
+    </div>
+    <button type="button" class="btn btn-dark"><a href="celling fan.html">CLICK TO VISIT GALLERY</a></button>
+  </div>
+  </div>
+</div>
+
+ <div data-aos="fade-left"> 
+  <div class="con">
+    <img src="pedistran fan/bg.jpg" alt="" width="100%" height="300px">
+     <div class="top-right"><h2>PADSTRAN FANS</h2>
+      <div data-aos="fade-right"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="1100"
+     data-aos-duration="1100">
+      <p>Choose exactly how and where you want that fresh breeze of
+     <br>  air, be it your verandah or inside your home. Usha pedestal fans are 
+     <br> equipped with height adjustment and easy tilting mechanism,
+     <br>  to give comfort at all levels and spaces.</p>
+   </div>
+   <button type="button" class="btn btn-dark"><a href="padastal fan.html">CLICK TO VISIT GALLERY</a></button>
+ </div>
+  </div>
+</div>
+  <div data-aos="fade-right">
+  <div class="con">
+    <img src="table fan/bg.jpg" alt="" width="100%" height="300px">
+    <div class="top-left"><h2>TABLE FANS</h2>
+      <div data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="1300"
+     data-aos-duration="1300">
+      <p>Your buddy for all places be it your study, kitchen or balcony!
+    <br>  Compact and light weight Usha Table Fans sit comfortably on your desk or the floor
+    <br>  to provide focused air anywhere. Designed for a great experience with easy
+    <br>  tilting mechanism, you can adjust the air flow according to your needs.</p>
+  </div>
+  <button type="button" class="btn btn-dark"><a href="table fan.html">CLICK TO VISIT GALLERY</a></button>
+</div>
+</div>
+  </div>
+
+  <div data-aos="fade-left">
+  <div class="con">
+    <img src="bracket fan/bg.jpg" alt="" width="100%" height="300px">
+    <div class="top-right" style="color: white;"><h2>WALL FANS</h2>
+      <div data-aos="fade-right"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="1700"
+     data-aos-duration="1700">
+      <p style="color: white;">Have limited space for a regular fan? 
+    <br> Choose from our wide range of compact, powerful, 
+  <br> feature packed, and light weight Usha Wall Fans. 
+<br> Engineered for effective cooling, wall fans are ideal for small apartments,
+<br> office spaces and shops.</p>
+</div>
+<button type="button" class="btn btn-dark" style="color: black;"><a href="wall fan.html">CLICK TO VISIT GALLERY</a></button>
+</div>
+  </div>
+</div>
+  <div data-aos="fade-right">
+  <div class="con">
+    <img src="exust fan/bg.jpg" alt="" width="100%" height="300px">
+    <div class="top-left"><h2>EXAUST FANS</h2>
+      <div data-aos="fade-left"
+     data-aos-anchor="#example-anchor"
+     data-aos-offset="2000"
+     data-aos-duration="2000">
+      <p>Looking for the right Exhaust fan to throw out stale air? 
+    <br> Look no further, Usha Exhaust fans with automatic shutter and 
+  <br> rust-proof body are ideal for your kitchens and bathrooms.</p>
+</div>
+<button type="button" class="btn btn-dark"><a href="exaust fan.html">CLICK TO VISIT GALLERY</a></button>
+</div>
+  </div>
+</div>
+<footer class="container-fluid">
+     <div class="container-fluid">
+          <!---<div class="row">--->
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>FanOFan Company</h3>
+                    <p style="color: white;">FanOFan Company is into manufacturing and selling on Fans.They manufacture fans for various needs of customers. From Ceiling Fans to Table Fans to Exhaust Fans, they are into all types of Fan Manufacturing. 
+They are looking to come up with their own website and display all the products available with them. They want to provide a detailed information about all their products.</p>
+                    <div class="footer-copyright">
+                         <p style="color: white;">Copyright &copy; 2019 FANoFAN - Manufacture Fans</p>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Talk to us</h3>
+                    <p style="color: white;"><i class="fa fa-globe"></i > 2nd Floor,Prograssive Center,Sharah-e-Faisal,Karachi.</p>
+                    <p style="color: white;"><i class="fa fa-phone"></i> 021-34569871.</p>
+                    <p style="color: white;"><i class="fa fa-save"></i>fanofan@company.com.</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+             </div>
+               <!---</div>--->                                   
+          </div>
+     </div>
+</footer>
+
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+
+</div>
+<br>
+<br>
+<script type="text/javascript">
+  var preloader = document.getElementById('loading');
+  function myFunction(){
+    preloader.style.display = 'none';
+  }
+</script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    </script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
