@@ -41,13 +41,13 @@ To run the FanoFan website locally, follow these steps:
 1. Clone this repository to your local machine using the following command:
 
    ```
-   git clone https://github.com/your-username/fanofan.git
+   git clone https://github.com/DehyaKhurraim/FAN-o-FAN.git
    ```
 
 2. Navigate to the project's directory:
 
    ```
-   cd fanofan
+   cd FAN-o-FAN
    ```
 
 3. Open the `index.html` file in your preferred web browser.
