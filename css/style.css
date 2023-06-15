@@ -1,0 +1,132 @@
+
+/*---------------------------------------
+   Gallery section              
+-----------------------------------------*/
+
+#gallery span {
+  display: block;
+  padding-bottom: 32px;
+}
+
+#gallery .col-md-6 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#gallery .gallery-thumb {
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px 0px rgba(90, 91, 95, 0.15);
+  cursor: pointer;
+  display: block;
+  position: relative;
+  top: 0px;
+  transition: all 0.4s ease-in-out;
+}
+
+#gallery .gallery-thumb:hover {
+  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+  top: -5px;
+}
+
+#gallery .gallery-thumb img {
+  width: 100%;
+}
+
+#gallery .col-md-12 p {
+  padding-top: 22px;
+  text-align: center;
+}
+#heading{
+  text-indent: center;
+  font-weight: 500;
+  font-weight: sans-serif;
+}
+
+
+/* Back top */
+.go-top {
+  background-color: white;
+  box-shadow: 1px 1.732px 12px 0px rgba( 0, 0, 0, .14 ), 1px 1.732px 3px 0px rgba( 0, 0, 0, .12 );
+  transition : all 1s ease;
+  bottom: 2em;
+  right: 2em;
+  color: #333;
+  font-size: 24px;
+  display: none;
+  position: fixed;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.go-top:hover {
+    background: orange;
+    color: #ffffff;
+}
+/*.rotate:hover{
+    transform: rotate(60deg);
+    transition: 15s;
+    overflow: hidden;
+    
+}*/
+
+
+/*---------------------------------------
+   Mobile Responsive         
+-----------------------------------------*/
+
+@media (max-width: 980px) {
+
+  .main-about,
+  .main-single-post,  
+  .main-gallery,
+  .main-contact {
+    height: 35vh;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  #about .col-md-6 img {
+    padding-left: 0px;
+  }
+
+  #blog-single-post .blog-single-post-image img {
+    padding-bottom: 22px;
+  }
+
+  footer .col-md-4 {
+    padding-top: 22px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  h1 {
+    font-size: 42px;
+  }
+
+  #about, #gallery,
+  #contact,
+  #blog, #blog-single-post {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+}
+
